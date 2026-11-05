@@ -80,7 +80,7 @@ Sin cambios de contrato, esquema ni comportamiento.
 
 ### 7.1 README
 
-- Los README de las tres aplicaciones y de `GameBook.System` siguen la estructura del repositorio de referencia [`CarlosSV923/VideoExplorer`](https://github.com/CarlosSV923/VideoExplorer):
+- Los README de las tres aplicaciones y de `GameBook.System` siguen la estructura del repositorio de referencia [`CSX-923/VideoExplorer`](https://github.com/CSX-923/VideoExplorer):
   1. Título, enlace al otro idioma, estado y badge de CI.
   2. Captura o GIF principal.
   3. Párrafo de propósito y «What it does».

@@ -54,7 +54,7 @@ docker compose ps
 
 Open the Frontend at `http://localhost:3000`. AuthUser and Game expose health checks at `/health` and Swagger UI at `/docs`. The frontend catalog needs IGDB/Twitch values; account and favorites flows need the local signing pair and initialized service databases.
 
-Compose builds the application images and initializes database schemas, but **does not run Prisma migrations**. Migrations are managed through the dedicated GitHub Actions workflows in the AuthUser and Game repositories, using their migration-only credentials. Do not add migration URLs to Compose or run migrations as part of image build or service startup. See the respective [AuthUser development guide](https://github.com/CarlosSV923/GameBook.Microservice.AuthUser/blob/main/docs/development.md#database-and-migrations) and [Game development guide](https://github.com/CarlosSV923/GameBook.Microservice.Game/blob/main/docs/development.md#database-and-migrations) for migration policy and environment details.
+Compose builds the application images and initializes database schemas, but **does not run Prisma migrations**. Migrations are managed through the dedicated GitHub Actions workflows in the AuthUser and Game repositories, using their migration-only credentials. Do not add migration URLs to Compose or run migrations as part of image build or service startup. See the respective [AuthUser development guide](https://github.com/CSX-923/GameBook.Microservice.AuthUser/blob/main/docs/development.md#database-and-migrations) and [Game development guide](https://github.com/CSX-923/GameBook.Microservice.Game/blob/main/docs/development.md#database-and-migrations) for migration policy and environment details.
 
 ### Stop and reset
 
@@ -78,13 +78,13 @@ Each application is deployed from its `main` branch. Frontend runs on Vercel; Au
 
 Neon has separate `develop` and `production` environments and credentials. Application runtime roles are limited to their service schema. Migration credentials are separate and used by the dedicated GitHub Actions workflows; migration URLs are not configured in Vercel, Render or Compose.
 
-GitHub Pages hosts the interactive system diagrams from the `architecture/` directory. Open the [diagram index](https://carlossv923.github.io/GameBook.System/) or the [English system architecture](https://carlossv923.github.io/GameBook.System/GameBook.System-architecture-en.html).
+GitHub Pages hosts the interactive system diagrams from the `architecture/` directory. Open the [diagram index](https://csx-923.github.io/GameBook.System/) or the [English system architecture](https://csx-923.github.io/GameBook.System/GameBook.System-architecture-en.html).
 
 Application operations are documented in their repositories:
 
-- [Frontend development guide](https://github.com/CarlosSV923/GameBook.Frontend/blob/main/docs/development.md)
-- [AuthUser development guide](https://github.com/CarlosSV923/GameBook.Microservice.AuthUser/blob/main/docs/development.md)
-- [Game development guide](https://github.com/CarlosSV923/GameBook.Microservice.Game/blob/main/docs/development.md)
+- [Frontend development guide](https://github.com/CSX-923/GameBook.Frontend/blob/main/docs/development.md)
+- [AuthUser development guide](https://github.com/CSX-923/GameBook.Microservice.AuthUser/blob/main/docs/development.md)
+- [Game development guide](https://github.com/CSX-923/GameBook.Microservice.Game/blob/main/docs/development.md)
 
 ## Updating this repository
 
