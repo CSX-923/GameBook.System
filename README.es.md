@@ -15,7 +15,7 @@ GameBook es un pequeño sistema full stack para un portfolio, construido con des
 
 ## Demo y documentación de API
 
-- **Aplicación:** [gamebook-frontend.vercel.app](https://gamebook-frontend.vercel.app)
+- **Aplicación:** [gamebook-system.vercel.app](https://gamebook-system.vercel.app)
 - **Swagger de AuthUser:** [gamebook-microservice-authuser.onrender.com/docs](https://gamebook-microservice-authuser.onrender.com/docs)
 - **Swagger de Game:** [gamebook-microservice-game.onrender.com/docs](https://gamebook-microservice-game.onrender.com/docs)
 - **Diagramas de arquitectura:** [índice interactivo de diagramas](https://csx-923.github.io/GameBook.System/)

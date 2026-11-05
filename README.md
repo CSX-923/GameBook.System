@@ -15,7 +15,7 @@ GameBook is a small full-stack portfolio system built with spec-driven developme
 
 ## Live demo and API docs
 
-- **Live app:** [gamebook-frontend.vercel.app](https://gamebook-frontend.vercel.app)
+- **Live app:** [gamebook-system.vercel.app](https://gamebook-system.vercel.app)
 - **AuthUser Swagger:** [gamebook-microservice-authuser.onrender.com/docs](https://gamebook-microservice-authuser.onrender.com/docs)
 - **Game Swagger:** [gamebook-microservice-game.onrender.com/docs](https://gamebook-microservice-game.onrender.com/docs)
 - **Architecture diagrams:** [interactive diagram index](https://csx-923.github.io/GameBook.System/)
