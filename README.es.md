@@ -18,7 +18,7 @@ GameBook es un pequeño sistema full stack para un portfolio, construido con des
 - **Aplicación:** [gamebook-frontend.vercel.app](https://gamebook-frontend.vercel.app)
 - **Swagger de AuthUser:** [gamebook-microservice-authuser.onrender.com/docs](https://gamebook-microservice-authuser.onrender.com/docs)
 - **Swagger de Game:** [gamebook-microservice-game.onrender.com/docs](https://gamebook-microservice-game.onrender.com/docs)
-- **Diagramas de arquitectura:** [índice interactivo de diagramas](https://carlossv923.github.io/GameBook.System/)
+- **Diagramas de arquitectura:** [índice interactivo de diagramas](https://csx-923.github.io/GameBook.System/)
 
 Las API de backend funcionan en el nivel gratuito de Render; la primera solicitud puede tardar un poco más mientras los servicios se activan.
 
@@ -32,18 +32,18 @@ Las API de backend funcionan en el nivel gratuito de Render; la primera solicitu
 
 | Repositorio                                                                                     | Función                                                  | Tecnologías                       | Despliegue                  |
 | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------- | --------------------------------- | --------------------------- |
-| [GameBook.Frontend](https://github.com/CarlosSV923/GameBook.Frontend)                           | Catálogo web, interfaz de cuenta y favoritos             | Next.js, React, TypeScript        | Vercel desde `main`         |
-| [GameBook.Microservice.AuthUser](https://github.com/CarlosSV923/GameBook.Microservice.AuthUser) | Cuentas, autenticación y validación de sesión            | NestJS, TypeScript, Prisma        | Render desde `main`         |
-| [GameBook.Microservice.Game](https://github.com/CarlosSV923/GameBook.Microservice.Game)         | Favoritos de usuario e instantáneas de juegos            | NestJS, TypeScript, Prisma        | Render desde `main`         |
-| [GameBook.System](https://github.com/CarlosSV923/GameBook.System)                               | Documentación del sistema, diagramas e integración local | Markdown, Archify, Docker Compose | GitHub Pages para diagramas |
+| [GameBook.Frontend](https://github.com/CSX-923/GameBook.Frontend)                           | Catálogo web, interfaz de cuenta y favoritos             | Next.js, React, TypeScript        | Vercel desde `main`         |
+| [GameBook.Microservice.AuthUser](https://github.com/CSX-923/GameBook.Microservice.AuthUser) | Cuentas, autenticación y validación de sesión            | NestJS, TypeScript, Prisma        | Render desde `main`         |
+| [GameBook.Microservice.Game](https://github.com/CSX-923/GameBook.Microservice.Game)         | Favoritos de usuario e instantáneas de juegos            | NestJS, TypeScript, Prisma        | Render desde `main`         |
+| [GameBook.System](https://github.com/CSX-923/GameBook.System)                               | Documentación del sistema, diagramas e integración local | Markdown, Archify, Docker Compose | GitHub Pages para diagramas |
 
 ## Arquitectura
 
-[![Arquitectura del sistema GameBook](architecture/GameBook.System-architecture-es.svg)](https://carlossv923.github.io/GameBook.System/GameBook.System-architecture-es.html)
+[![Arquitectura del sistema GameBook](architecture/GameBook.System-architecture-es.svg)](https://csx-923.github.io/GameBook.System/GameBook.System-architecture-es.html)
 
 El navegador consulta los datos públicos de IGDB a través del servidor Next.js; las credenciales de aplicación de Twitch permanecen solo en ese servidor. AuthUser firma JWT RS256 y Game verifica la firma y solicita a AuthUser validar la sesión actual antes de servir favoritos protegidos. Ambos servicios usan esquemas separados y roles de runtime limitados en una misma base de datos PostgreSQL de Neon; las migraciones se ejecutan solo mediante sus workflows de GitHub Actions.
 
-Abre el [diagrama interactivo en español](https://carlossv923.github.io/GameBook.System/GameBook.System-architecture-es.html) o consulta el [índice de diagramas](https://carlossv923.github.io/GameBook.System/).
+Abre el [diagrama interactivo en español](https://csx-923.github.io/GameBook.System/GameBook.System-architecture-es.html) o consulta el [índice de diagramas](https://csx-923.github.io/GameBook.System/).
 
 ## Compose local
 

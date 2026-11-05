@@ -54,7 +54,7 @@ docker compose ps
 
 Abre el Frontend en `http://localhost:3000`. AuthUser y Game exponen comprobaciones de salud en `/health` e interfaz Swagger en `/docs`. El catálogo necesita valores IGDB/Twitch; los flujos de cuenta y favoritos requieren el par de claves local y las bases de datos de los servicios inicializadas.
 
-Compose construye las imágenes de las aplicaciones e inicializa los esquemas de base de datos, pero **no ejecuta migraciones Prisma**. Las migraciones se administran mediante los workflows dedicados de GitHub Actions en los repositorios AuthUser y Game, con credenciales exclusivas de migración. No agregues URLs de migración a Compose ni ejecutes migraciones como parte del build de imagen o el arranque del servicio. Consulta la [guía de desarrollo de AuthUser](https://github.com/CarlosSV923/GameBook.Microservice.AuthUser/blob/main/docs/development.md#database-and-migrations) y la [guía de desarrollo de Game](https://github.com/CarlosSV923/GameBook.Microservice.Game/blob/main/docs/development.md#database-and-migrations) para conocer la política y los ambientes.
+Compose construye las imágenes de las aplicaciones e inicializa los esquemas de base de datos, pero **no ejecuta migraciones Prisma**. Las migraciones se administran mediante los workflows dedicados de GitHub Actions en los repositorios AuthUser y Game, con credenciales exclusivas de migración. No agregues URLs de migración a Compose ni ejecutes migraciones como parte del build de imagen o el arranque del servicio. Consulta la [guía de desarrollo de AuthUser](https://github.com/CSX-923/GameBook.Microservice.AuthUser/blob/main/docs/development.md#database-and-migrations) y la [guía de desarrollo de Game](https://github.com/CSX-923/GameBook.Microservice.Game/blob/main/docs/development.md#database-and-migrations) para conocer la política y los ambientes.
 
 ### Detener y restablecer
 
@@ -78,13 +78,13 @@ Cada aplicación se despliega desde su rama `main`. Frontend funciona en Vercel;
 
 Neon tiene ambientes `develop` y `production` separados, con credenciales distintas. Los roles de runtime de las aplicaciones están limitados al esquema de su servicio. Las credenciales de migración son distintas y se usan en los workflows dedicados de GitHub Actions; las URLs de migración no se configuran en Vercel, Render ni Compose.
 
-GitHub Pages publica los diagramas interactivos del sistema desde el directorio `architecture/`. Abre el [índice de diagramas](https://carlossv923.github.io/GameBook.System/) o la [arquitectura general en español](https://carlossv923.github.io/GameBook.System/GameBook.System-architecture-es.html).
+GitHub Pages publica los diagramas interactivos del sistema desde el directorio `architecture/`. Abre el [índice de diagramas](https://csx-923.github.io/GameBook.System/) o la [arquitectura general en español](https://csx-923.github.io/GameBook.System/GameBook.System-architecture-es.html).
 
 La operación de cada aplicación está documentada en su repositorio:
 
-- [Guía de desarrollo de Frontend](https://github.com/CarlosSV923/GameBook.Frontend/blob/main/docs/development.es.md)
-- [Guía de desarrollo de AuthUser](https://github.com/CarlosSV923/GameBook.Microservice.AuthUser/blob/main/docs/development.es.md)
-- [Guía de desarrollo de Game](https://github.com/CarlosSV923/GameBook.Microservice.Game/blob/main/docs/development.es.md)
+- [Guía de desarrollo de Frontend](https://github.com/CSX-923/GameBook.Frontend/blob/main/docs/development.es.md)
+- [Guía de desarrollo de AuthUser](https://github.com/CSX-923/GameBook.Microservice.AuthUser/blob/main/docs/development.es.md)
+- [Guía de desarrollo de Game](https://github.com/CSX-923/GameBook.Microservice.Game/blob/main/docs/development.es.md)
 
 ## Actualizar este repositorio
 
